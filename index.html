@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>María Zuluaga Soto — Interactive Designer & Game Developer</title>
+  <meta name="description"
+    content="Portfolio of María Zuluaga Soto — Interactive Designer specializing in game development, VR experiences, and digital narrative. Unity, Maya, Figma." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Floating petals background -->
+  <div class="petals-container" id="petals"></div>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ─── NAV ─── -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">MZS <span>🌸</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="nav-cta">Say Hello</a></li>
+    </ul>
+    <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Interactive Designer · Game Developer · QA-minded</p>
+      <h1 class="hero-name reveal">
+        <span class="name-first">María</span>
+        <span class="name-last">Zuluaga Soto</span>
+      </h1>
+      <p class="hero-tagline reveal">
+        I build games that <em>ship</em> — and I know<br />
+        exactly how they break.
+      </p>
+      <div class="hero-tags reveal">
+        <span class="tag">🎮 Unity · C#</span>
+        <span class="tag">🥽 VR / Meta Quest</span>
+        <span class="tag">🌐 WebGL Builds</span>
+        <span class="tag">🔍 UX Research</span>
+      </div>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="hero-card reveal">
+        <div class="hero-card-inner">
+          <div class="hc-avatar">MZ</div>
+          <div class="hc-info">
+            <p class="hc-name">María Zuluaga</p>
+            <p class="hc-role">EAFIT · GPA 4.3 / 5.0</p>
+            <p class="hc-location">📍 Medellín, Colombia</p>
+          </div>
+          <div class="hc-badges">
+            <span>Unity</span>
+            <span>Maya</span>
+            <span>Figma</span>
+            <span>VR</span>
+          </div>
+          <p class="hc-english">🇺🇸 English C1</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">⋆ About me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title reveal">I build games.<br /><em>I know how they break.</em></h2>
+          <p class="body-text reveal">
+            I'm an Interactive Design student at Universidad EAFIT obsessed with how games work
+            from the inside. I've built and shipped Unity projects across WebGL, mobile, and
+            Meta Quest 3 — which means I've also debugged them, tested their interactions, and
+            made sure every system behaves exactly as expected before it reaches a player.
+          </p>
+          <p class="body-text reveal">
+            I bring both a developer's technical understanding (Unity, C#, build pipelines)
+            and a researcher's documentation discipline (qualitative &amp; quantitative UX methods)
+            to every project. I thrive in team environments, ask a lot of questions,
+            and genuinely care about quality.
+          </p>
+          <p class="body-quote reveal">
+            "Curiosity is the best debugging tool."
+          </p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-num">7+</span>
+            <span class="stat-label">Projects shipped</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">4.3</span>
+            <span class="stat-label">GPA / 5.0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">C1</span>
+            <span class="stat-label">English level</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Years studying</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">⋆ Selected work</div>
+      <h2 class="section-title reveal">Projects</h2>
+      <p class="section-sub reveal">Games, VR, animation, and interactive apps — built with intention.</p>
+
+      <div class="projects-grid">
+
+        <!-- 1 Labyrinth Escape -->
+        <article class="project-card card-featured reveal" data-category="Game Dev">
+          <div class="pc-glow"></div>
+          <div class="pc-badge">2026 · Featured</div>
+          <div class="pc-emoji">🌀</div>
+          <h3 class="pc-title">Labyrinth Escape</h3>
+          <p class="pc-type">3D Unity Game · WebGL</p>
+          <p class="pc-desc">
+            A 3D labyrinth game built end-to-end in Unity. I owned level design,
+            player interactions, the tutorial system, and shipped the full WebGL build.
+          </p>
+          <ul class="pc-bullets">
+            <li>Level design &amp; environment layout</li>
+            <li>Player interaction systems with objects &amp; obstacles</li>
+            <li>Game menu UI &amp; tutorial flow</li>
+            <li>WebGL compilation &amp; publishing</li>
+          </ul>
+          <div class="pc-tools">
+            <span>Unity</span><span>C#</span><span>WebGL</span><span>Level Design</span>
+          </div>
+          <div class="pc-role">Role: Level Designer · Developer</div>
+        </article>
+
+        <!-- 2 Monte Sereno Beyond -->
+        <article class="project-card reveal" data-category="VR">
+          <div class="pc-glow"></div>
+          <div class="pc-badge">2025</div>
+          <div class="pc-emoji">🥽</div>
+          <h3 class="pc-title">Monte Sereno Beyond</h3>
+          <p class="pc-type">VR Experience · Meta Quest 3</p>
+          <p class="pc-desc">
+            An immersive virtual reality experience built in Unity for Meta Quest 3.
+            I designed and implemented an interactive zone of the virtual environment.
+          </p>
+          <ul class="pc-bullets">
+            <li>Interactive zone design &amp; implementation</li>
+            <li>User interactions with virtual space</li>
+            <li>Environment optimization for immersion</li>
+          </ul>
+          <div class="pc-tools">
+            <span>Unity</span><span>VR</span><span>Meta Quest 3</span><span>UX</span>
+          </div>
+          <div class="pc-role">Role: VR Designer · Developer</div>
+        </article>
+
+        <!-- 3 Inkomprendido -->
+        <article class="project-card reveal" data-category="Animation">
+          <div class="pc-glow"></div>
+          <div class="pc-badge">2025 · IndieLevel</div>
+          <div class="pc-emoji">🃏</div>
+          <h3 class="pc-title">Inkomprendido</h3>
+          <p class="pc-type">3D Card-Combat Game · Studio Collaboration</p>
+          <p class="pc-desc">
+            A 3D turn-based card combat game developed in collaboration with IndieLevel.
+            I led character animation and produced the game's main cinematic.
+          </p>
+          <ul class="pc-bullets">
+            <li>Character animations: attack, heal, damage, idle</li>
+            <li>Main cinematic production from narrative script</li>
+            <li>Animation implementation &amp; rendering in Maya</li>
+          </ul>
+          <div class="pc-tools">
+            <span>Maya</span><span>Unity</span><span>Animation</span><span>Cinematics</span>
+          </div>
+          <div class="pc-role">Role: Character Animator · Cinematic Director</div>
+        </article>
+
+        <!-- 4 Bien-Start -->
+        <article class="project-card reveal" data-category="VR · UX">
+          <div class="pc-glow"></div>
+          <div class="pc-badge">2025 · FunFactor</div>
+          <div class="pc-emoji">🌿</div>
+          <h3 class="pc-title">Bien-Start</h3>
+          <p class="pc-type">VR Gamification · Workplace Wellness</p>
+          <p class="pc-desc">
+            A VR gamification experience for active workplace breaks, built with FunFactor.
+            This project combined deep UX research with immersive UI design.
+          </p>
+          <ul class="pc-bullets">
+            <li>Qualitative &amp; quantitative UX research</li>
+            <li>UI design for the VR experience</li>
+            <li>Voice-over recording &amp; implementation</li>
+          </ul>
+          <div class="pc-tools">
+            <span>Unity VR</span><span>Figma</span><span>UX Research</span><span>Voice-over</span>
+          </div>
+          <div class="pc-role">Role: UX Researcher · UI Designer</div>
+        </article>
+
+        <!-- 5 Maleficum -->
+        <article class="project-card reveal" data-category="Animation">
+          <div class="pc-glow"></div>
+          <div class="pc-badge">2024</div>
+          <div class="pc-emoji">🌙</div>
+          <h3 class="pc-title">Maleficum</h3>
+          <p class="pc-type">3D Narrative Animation</p>
+          <p class="pc-desc">
+            A 3D animated short with advanced Maya techniques. I produced the final 12 seconds
+            of the piece, pushing animation craft with complex rigging and render workflows.
+          </p>
+          <ul class="pc-bullets">
+            <li>Final 12s of animation sequence</li>
+            <li>Advanced Graph Editor &amp; parenting</li>
+            <li>Full render pipeline in Maya</li>
+          </ul>
+          <div class="pc-tools">
+            <span>Maya</span><span>Graph Editor</span><span>Rendering</span><span>Rigging</span>
+          </div>
+          <div class="pc-role">Role: 3D Animator</div>
+        </article>
+
+        <!-- 6 Urbam City -->
+        <article class="project-card reveal" data-category="Game Dev">
+          <div class="pc-glow"></div>
+          <div class="pc-badge">2023</div>
+          <div class="pc-emoji">🏙️</div>
+          <h3 class="pc-title">Urbam City</h3>
+          <p class="pc-type">Interactive Educational App · Unity Mobile</p>
+          <p class="pc-desc">
+            An educational interactive application for mobile devices. I built
+            the touch interaction system and programmed player movement and object interactions.
+          </p>
+          <ul class="pc-bullets">
+            <li>Touch interaction system for mobile</li>
+            <li>Player movement programming</li>
+            <li>Object interaction logic</li>
+          </ul>
+          <div class="pc-tools">
+            <span>Unity</span><span>C#</span><span>Mobile</span><span>Touch UI</span>
+          </div>
+          <div class="pc-role">Role: Unity Developer · Interaction Designer</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">⋆ Toolkit</div>
+      <h2 class="section-title reveal">Skills &amp; Tools</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <div class="sg-icon">🎮</div>
+          <h3 class="sg-title">Game Development</h3>
+          <div class="sg-tags">
+            <span>Unity 2D</span>
+            <span>Unity 3D</span>
+            <span>Unity VR</span>
+            <span>C#</span>
+            <span>Level Design</span>
+            <span>Interaction Systems</span>
+            <span>WebGL Builds</span>
+            <span>Prototyping</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="sg-icon">🎬</div>
+          <h3 class="sg-title">3D &amp; Animation</h3>
+          <div class="sg-tags">
+            <span>Autodesk Maya</span>
+            <span>Character Animation</span>
+            <span>Rigging</span>
+            <span>Cinematics</span>
+            <span>Graph Editor</span>
+            <span>Rendering</span>
+            <span>After Effects</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="sg-icon">🎨</div>
+          <h3 class="sg-title">Design &amp; UX</h3>
+          <div class="sg-tags">
+            <span>Figma</span>
+            <span>UI Design</span>
+            <span>UX Research</span>
+            <span>Qualitative Methods</span>
+            <span>Quantitative Methods</span>
+            <span>Canva</span>
+            <span>Genially</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="sg-icon">🎵</div>
+          <h3 class="sg-title">Audio &amp; Production</h3>
+          <div class="sg-tags">
+            <span>Reaper</span>
+            <span>Audacity</span>
+            <span>Voice-over</span>
+            <span>CapCut</span>
+            <span>InShot</span>
+            <span>Video Editing</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="languages-bar reveal">
+        <div class="lang-item">
+          <span class="lang-name">🇨🇴 Spanish</span>
+          <div class="lang-bar">
+            <div class="lang-fill" style="width:100%"></div>
+          </div>
+          <span class="lang-level">Native</span>
+        </div>
+        <div class="lang-item">
+          <span class="lang-name">🇺🇸 English</span>
+          <div class="lang-bar">
+            <div class="lang-fill" style="width:88%"></div>
+          </div>
+          <span class="lang-level">C1 · B2 Certified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <div class="contact-orb"></div>
+        <p class="section-label">⋆ Let's connect</p>
+        <h2 class="section-title">Open to internships<br />in <em>games &amp; QA.</em></h2>
+        <p class="body-text">
+          I'm actively seeking internship opportunities in the games industry —
+          especially in quality assurance, interactive design, or game development.
+          I'm curious, detail-oriented, and ready to learn from any team.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:mzuluagas@eafit.edu.co" class="contact-link" id="emailLink">
+            <span class="cl-icon">📧</span>
+            <span class="cl-text">mzuluagas@eafit.edu.co</span>
+          </a>
+          <a href="https://www.linkedin.com/in/maria-zuluaga-soto-1812543aa" target="_blank" rel="noopener"
+            class="contact-link" id="linkedinLink">
+            <span class="cl-icon">💼</span>
+            <span class="cl-text">LinkedIn</span>
+          </a>
+          <a href="tel:+573007778674" class="contact-link" id="phoneLink">
+            <span class="cl-icon">📱</span>
+            <span class="cl-text">+57 300 777 8674</span>
+          </a>
+        </div>
+        <a href="mailto:mzuluagas@eafit.edu.co" class="btn btn-primary btn-large" id="hiringBtn">👋 Say hello</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        Designed &amp; built by María Zuluaga Soto · 2026 🌸
+      </p>
+      <p class="footer-sub">Universidad EAFIT · Medellín, Colombia</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
