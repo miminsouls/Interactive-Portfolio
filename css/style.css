@@ -654,6 +654,13 @@ img { display: block; max-width: 100%; }
   background: rgba(232,116,154,0.06);
 }
 .cl-icon { font-size: 1.2rem; }
+.cv-downloads {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  justify-content: center;
+}
+.cv-link { min-width: 0; flex: 1; max-width: 220px; }
 
 /* ── Footer ── */
 .footer {
