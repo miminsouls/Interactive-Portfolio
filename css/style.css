@@ -442,7 +442,11 @@ img { display: block; max-width: 100%; }
   color: var(--rose-400);
   margin-bottom: 12px;
 }
-.pc-emoji { font-size: 2.5rem; margin-bottom: 12px; }
+.pc-emoji {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
 .pc-title {
   font-family: var(--font-serif);
   font-size: 1.8rem;
@@ -529,7 +533,11 @@ img { display: block; max-width: 100%; }
   transition: border-color 0.3s, transform 0.3s;
 }
 .skill-group:hover { border-color: rgba(232,116,154,0.25); transform: translateY(-3px); }
-.sg-icon { font-size: 2rem; margin-bottom: 12px; }
+.sg-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
 .sg-title {
   font-family: var(--font-elegant);
   font-size: 1.25rem;
@@ -650,6 +658,14 @@ img { display: block; max-width: 100%; }
   margin-bottom: 4px;
 }
 .footer-sub { font-size: 0.78rem; color: var(--text-muted); opacity: 0.6; }
+
+/* ── Lucide Icons ── */
+[data-lucide] { display: inline-block; vertical-align: middle; }
+.icon { stroke-width: 1.8; }
+.icon-nav  { width: 0.95rem; height: 0.95rem; color: var(--rose-300); }
+.icon-tag  { width: 0.88rem; height: 0.88rem; color: var(--rose-400); }
+.icon-skill { width: 1.25rem; height: 1.25rem; color: var(--rose-400); }
+.icon-project { width: 2.4rem; height: 2.4rem; color: var(--rose-400); }
 
 /* ── Project Video Tabs (Inkomprendido) ── */
 .pc-videos {

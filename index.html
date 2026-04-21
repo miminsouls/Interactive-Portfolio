@@ -13,6 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
 
   <!-- ─── NAV ─── -->
   <nav class="nav" id="nav">
-    <div class="nav-logo">MZS <span>🌸</span></div>
+    <div class="nav-logo">MZS <i data-lucide="sparkles" class="icon icon-nav"></i></div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -51,10 +52,10 @@
         exactly how they break.
       </p>
       <div class="hero-tags reveal">
-        <span class="tag">🎮 Unity · C#</span>
-        <span class="tag">🥽 VR / Meta Quest</span>
-        <span class="tag">🌐 WebGL Builds</span>
-        <span class="tag">🔍 UX Research</span>
+        <span class="tag"><i data-lucide="gamepad-2" class="icon icon-tag"></i> Unity · C#</span>
+        <span class="tag"><i data-lucide="glasses" class="icon icon-tag"></i> VR / Meta Quest</span>
+        <span class="tag"><i data-lucide="globe" class="icon icon-tag"></i> WebGL Builds</span>
+        <span class="tag"><i data-lucide="search" class="icon icon-tag"></i> UX Research</span>
       </div>
       <div class="hero-actions reveal">
         <a href="#projects" class="btn btn-primary">See my work</a>
@@ -71,7 +72,7 @@
           <div class="hc-info">
             <p class="hc-name">María Zuluaga</p>
             <p class="hc-role">EAFIT · GPA 4.3 / 5.0</p>
-            <p class="hc-location">📍 Medellín, Colombia</p>
+            <p class="hc-location"><i data-lucide="map-pin" class="icon icon-tag"></i> Medellín, Colombia</p>
           </div>
           <div class="hc-badges">
             <span>Unity</span>
@@ -79,7 +80,7 @@
             <span>Figma</span>
             <span>VR</span>
           </div>
-          <p class="hc-english">🇺🇸 English C1</p>
+          <p class="hc-english"><i data-lucide="globe" class="icon icon-tag"></i> English C1</p>
         </div>
       </div>
     </div>
@@ -143,7 +144,7 @@
         <article class="project-card card-featured reveal" data-category="Game Dev">
           <div class="pc-glow"></div>
           <div class="pc-badge">2026 · Featured</div>
-          <div class="pc-emoji">🌀</div>
+          <div class="pc-emoji"><i data-lucide="navigation" class="icon icon-project"></i></div>
           <h3 class="pc-title">Labyrinth Escape</h3>
           <p class="pc-type">3D Unity Game · WebGL</p>
           <p class="pc-desc">
@@ -166,7 +167,7 @@
         <article class="project-card reveal" data-category="VR">
           <div class="pc-glow"></div>
           <div class="pc-badge">2025</div>
-          <div class="pc-emoji">🥽</div>
+          <div class="pc-emoji"><i data-lucide="glasses" class="icon icon-project"></i></div>
           <h3 class="pc-title">Monte Sereno Beyond</h3>
           <p class="pc-type">VR Experience · Meta Quest 3</p>
           <p class="pc-desc">
@@ -188,7 +189,7 @@
         <article class="project-card reveal" data-category="Animation">
           <div class="pc-glow"></div>
           <div class="pc-badge">2025 · IndieLevel</div>
-          <div class="pc-emoji">🃏</div>
+          <div class="pc-emoji"><i data-lucide="layers" class="icon icon-project"></i></div>
           <h3 class="pc-title">Inkomprendido</h3>
           <p class="pc-type">3D Card-Combat Game · Studio Collaboration</p>
           <p class="pc-desc">
@@ -203,9 +204,9 @@
           <!-- Inkomprendido Videos -->
           <div class="pc-videos">
             <div class="pv-tabs">
-              <button class="pv-tab active" onclick="switchInkVideo(this, '-pASCB_ayKg')">🎬 Teaser Narrativo</button>
-              <button class="pv-tab" onclick="switchInkVideo(this, 'HdBjTqZl0D4')">✨ Final "Bueno"</button>
-              <button class="pv-tab" onclick="switchInkVideo(this, 'Cm8Nvwfi9o0')">🖤 Final "Malo"</button>
+              <button class="pv-tab active" onclick="switchInkVideo(this, '-pASCB_ayKg')"><i data-lucide="film" class="icon icon-tag"></i> Teaser Narrativo</button>
+              <button class="pv-tab" onclick="switchInkVideo(this, 'HdBjTqZl0D4')"><i data-lucide="sparkles" class="icon icon-tag"></i> Final &ldquo;Bueno&rdquo;</button>
+              <button class="pv-tab" onclick="switchInkVideo(this, 'Cm8Nvwfi9o0')"><i data-lucide="zap" class="icon icon-tag"></i> Final &ldquo;Malo&rdquo;</button>
             </div>
             <div class="pv-frame">
               <iframe id="inkFrame" src="https://www.youtube.com/embed/-pASCB_ayKg" frameborder="0"
@@ -223,7 +224,7 @@
         <article class="project-card reveal" data-category="VR · UX">
           <div class="pc-glow"></div>
           <div class="pc-badge">2025 · FunFactor</div>
-          <div class="pc-emoji">🌿</div>
+          <div class="pc-emoji"><i data-lucide="leaf" class="icon icon-project"></i></div>
           <h3 class="pc-title">Bien-Start</h3>
           <p class="pc-type">VR Gamification · Workplace Wellness</p>
           <p class="pc-desc">
@@ -245,7 +246,7 @@
         <article class="project-card reveal" data-category="Animation">
           <div class="pc-glow"></div>
           <div class="pc-badge">2024</div>
-          <div class="pc-emoji">🌙</div>
+          <div class="pc-emoji"><i data-lucide="moon" class="icon icon-project"></i></div>
           <h3 class="pc-title">Maleficum</h3>
           <p class="pc-type">3D Narrative Animation</p>
           <p class="pc-desc">
@@ -267,7 +268,7 @@
         <article class="project-card reveal" data-category="Game Dev">
           <div class="pc-glow"></div>
           <div class="pc-badge">2023</div>
-          <div class="pc-emoji">🏙️</div>
+          <div class="pc-emoji"><i data-lucide="building-2" class="icon icon-project"></i></div>
           <h3 class="pc-title">Urbam City</h3>
           <p class="pc-type">Interactive Educational App · Unity Mobile</p>
           <p class="pc-desc">
@@ -306,7 +307,7 @@
           </div>
           <div class="corto-info">
             <span class="corto-title">UNA VELA</span>
-            <span class="corto-label">Short Film · Art Team · Screenwriting</span>
+            <span class="corto-label">Short Film · Set Design · Wardrobe · Video Editing</span>
           </div>
         </div>
 
@@ -318,7 +319,7 @@
           </div>
           <div class="corto-info">
             <span class="corto-title">SINESTESIA</span>
-            <span class="corto-label">Short Film · Art Team · Casting &amp; Production</span>
+            <span class="corto-label">Short Film · Art Direction · Makeup · Wardrobe · Lighting</span>
           </div>
         </div>
 
@@ -330,7 +331,7 @@
           </div>
           <div class="corto-info">
             <span class="corto-title">LEONA</span>
-            <span class="corto-label">Short Film · Art Team · Creative Direction</span>
+            <span class="corto-label">Short Film · Wardrobe Design · Props · Set Design · Lighting</span>
           </div>
         </div>
 
@@ -347,7 +348,7 @@
       <div class="skills-grid">
 
         <div class="skill-group reveal">
-          <div class="sg-icon">🎮</div>
+          <div class="sg-icon"><i data-lucide="gamepad-2" class="icon icon-skill"></i></div>
           <h3 class="sg-title">Game Development</h3>
           <div class="sg-tags">
             <span>Unity 2D</span>
@@ -362,7 +363,7 @@
         </div>
 
         <div class="skill-group reveal">
-          <div class="sg-icon">🎬</div>
+          <div class="sg-icon"><i data-lucide="clapperboard" class="icon icon-skill"></i></div>
           <h3 class="sg-title">3D &amp; Animation</h3>
           <div class="sg-tags">
             <span>Autodesk Maya</span>
@@ -376,7 +377,7 @@
         </div>
 
         <div class="skill-group reveal">
-          <div class="sg-icon">🎨</div>
+          <div class="sg-icon"><i data-lucide="palette" class="icon icon-skill"></i></div>
           <h3 class="sg-title">Design &amp; UX</h3>
           <div class="sg-tags">
             <span>Figma</span>
@@ -390,7 +391,7 @@
         </div>
 
         <div class="skill-group reveal">
-          <div class="sg-icon">🎵</div>
+          <div class="sg-icon"><i data-lucide="music" class="icon icon-skill"></i></div>
           <h3 class="sg-title">Audio &amp; Production</h3>
           <div class="sg-tags">
             <span>Reaper</span>
@@ -406,14 +407,14 @@
 
       <div class="languages-bar reveal">
         <div class="lang-item">
-          <span class="lang-name">🇨🇴 Spanish</span>
+          <span class="lang-name"><i data-lucide="message-circle" class="icon icon-tag"></i> Spanish</span>
           <div class="lang-bar">
             <div class="lang-fill" style="width:100%"></div>
           </div>
           <span class="lang-level">Native</span>
         </div>
         <div class="lang-item">
-          <span class="lang-name">🇺🇸 English</span>
+          <span class="lang-name"><i data-lucide="globe" class="icon icon-tag"></i> English</span>
           <div class="lang-bar">
             <div class="lang-fill" style="width:88%"></div>
           </div>
@@ -437,20 +438,20 @@
         </p>
         <div class="contact-links">
           <a href="mailto:mzuluagas@eafit.edu.co" class="contact-link" id="emailLink">
-            <span class="cl-icon">📧</span>
+            <span class="cl-icon"><i data-lucide="mail" class="icon icon-skill"></i></span>
             <span class="cl-text">mzuluagas@eafit.edu.co</span>
           </a>
           <a href="https://www.linkedin.com/in/maria-zuluaga-soto-1812543aa" target="_blank" rel="noopener"
             class="contact-link" id="linkedinLink">
-            <span class="cl-icon">💼</span>
+            <span class="cl-icon"><i data-lucide="linkedin" class="icon icon-skill"></i></span>
             <span class="cl-text">LinkedIn</span>
           </a>
           <a href="tel:+573007778674" class="contact-link" id="phoneLink">
-            <span class="cl-icon">📱</span>
+            <span class="cl-icon"><i data-lucide="phone" class="icon icon-skill"></i></span>
             <span class="cl-text">+57 300 777 8674</span>
           </a>
         </div>
-        <a href="mailto:mzuluagas@eafit.edu.co" class="btn btn-primary btn-large" id="hiringBtn">👋 Say hello</a>
+        <a href="mailto:mzuluagas@eafit.edu.co" class="btn btn-primary btn-large" id="hiringBtn"><i data-lucide="send" class="icon icon-tag"></i> Say hello</a>
       </div>
     </div>
   </section>
@@ -459,13 +460,14 @@
   <footer class="footer">
     <div class="container">
       <p class="footer-text">
-        Designed &amp; built by María Zuluaga Soto · 2026 🌸
+        Designed &amp; built by María Zuluaga Soto · 2026
       </p>
       <p class="footer-sub">Universidad EAFIT · Medellín, Colombia</p>
     </div>
   </footer>
 
   <script src="js/script.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 
 </html>
