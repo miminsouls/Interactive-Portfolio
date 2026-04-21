@@ -42,6 +42,9 @@
   <!-- ─── HERO ─── -->
   <section class="hero" id="home">
     <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span> Open to internships &middot; 2025
+      </div>
       <p class="hero-eyebrow reveal">Interactive Designer · 3D Animator · Game Developer · QA-minded</p>
       <h1 class="hero-name reveal">
         <span class="name-first">María</span>
@@ -56,6 +59,7 @@
         <span class="tag"><i data-lucide="glasses" class="icon icon-tag"></i> VR / Meta Quest</span>
         <span class="tag"><i data-lucide="globe" class="icon icon-tag"></i> WebGL Builds</span>
         <span class="tag"><i data-lucide="search" class="icon icon-tag"></i> UX Research</span>
+        <span class="tag"><i data-lucide="shield-check" class="icon icon-tag"></i> QA Testing</span>
       </div>
       <div class="hero-actions reveal">
         <a href="#projects" class="btn btn-primary">See my work</a>
@@ -147,6 +151,13 @@
       <p class="section-sub reveal">Games, VR, 3D animation, audiovisual production, and interactive apps — built with
         intention.</p>
 
+      <div class="proj-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Game Dev">Game Dev</button>
+        <button class="filter-btn" data-filter="VR">VR</button>
+        <button class="filter-btn" data-filter="Animation">Animation</button>
+      </div>
+
       <div class="projects-grid">
 
         <!-- 1 Labyrinth Escape -->
@@ -167,10 +178,11 @@
             <li>WebGL compilation &amp; publishing</li>
           </ul>
           <div class="pc-video-single pc-video-full">
-            <div class="pv-frame">
-              <iframe src="https://www.youtube.com/embed/9-3vLH-whzM" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="pv-frame video-cover" data-vid="9-3vLH-whzM">
+              <img class="video-thumb" src="https://img.youtube.com/vi/9-3vLH-whzM/hqdefault.jpg" alt="Labyrinth Escape gameplay" loading="lazy">
+              <button class="play-btn" onclick="loadVideo(this.closest('.pv-frame'))" aria-label="Play video">
+                <svg class="play-icon" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
             </div>
           </div>
           <div class="pc-tools">
@@ -196,10 +208,11 @@
             <li>Environment optimization for immersion</li>
           </ul>
           <div class="pc-video-single">
-            <div class="pv-frame">
-              <iframe src="https://www.youtube.com/embed/_vGLZhVnZwY" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="pv-frame video-cover" data-vid="_vGLZhVnZwY">
+              <img class="video-thumb" src="https://img.youtube.com/vi/_vGLZhVnZwY/hqdefault.jpg" alt="Monte Sereno VR gameplay" loading="lazy">
+              <button class="play-btn" onclick="loadVideo(this.closest('.pv-frame'))" aria-label="Play video">
+                <svg class="play-icon" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
             </div>
           </div>
           <div class="pc-tools">
@@ -234,10 +247,11 @@
               <button class="pv-tab" onclick="switchVideo('inkFrame', 'Cm8Nvwfi9o0', this)"><i data-lucide="zap"
                   class="icon icon-tag"></i> Bad Ending</button>
             </div>
-            <div class="pv-frame">
-              <iframe id="inkFrame" src="https://www.youtube.com/embed/-pASCB_ayKg" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="pv-frame video-cover" id="inkFrame" data-vid="-pASCB_ayKg">
+              <img class="video-thumb" src="https://img.youtube.com/vi/-pASCB_ayKg/hqdefault.jpg" alt="Inkomprendido video" loading="lazy">
+              <button class="play-btn" onclick="loadVideo(this.closest('.pv-frame'))" aria-label="Play video">
+                <svg class="play-icon" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
             </div>
           </div>
           <div class="pc-tools">
@@ -269,10 +283,11 @@
               <button class="pv-tab" onclick="switchVideo('bienFrame', 'qT3kpYy1leA', this)"><i
                   data-lucide="monitor-play" class="icon icon-tag"></i> Full Experience</button>
             </div>
-            <div class="pv-frame">
-              <iframe id="bienFrame" src="https://www.youtube.com/embed/mP1ri7IirlQ" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="pv-frame video-cover" id="bienFrame" data-vid="mP1ri7IirlQ">
+              <img class="video-thumb" src="https://img.youtube.com/vi/mP1ri7IirlQ/hqdefault.jpg" alt="Bien-Start video" loading="lazy">
+              <button class="play-btn" onclick="loadVideo(this.closest('.pv-frame'))" aria-label="Play video">
+                <svg class="play-icon" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
             </div>
           </div>
           <div class="pc-tools">
@@ -298,10 +313,11 @@
             <li>Full render pipeline in Maya</li>
           </ul>
           <div class="pc-video-single">
-            <div class="pv-frame">
-              <iframe src="https://www.youtube.com/embed/fVzH7qpyKcM" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="pv-frame video-cover" data-vid="fVzH7qpyKcM">
+              <img class="video-thumb" src="https://img.youtube.com/vi/fVzH7qpyKcM/hqdefault.jpg" alt="Maleficum animation" loading="lazy">
+              <button class="play-btn" onclick="loadVideo(this.closest('.pv-frame'))" aria-label="Play video">
+                <svg class="play-icon" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
             </div>
           </div>
           <div class="pc-tools">
@@ -327,10 +343,11 @@
             <li>Object interaction logic</li>
           </ul>
           <div class="pc-video-single">
-            <div class="pv-frame">
-              <iframe src="https://www.youtube.com/embed/pSUekUq0Iho" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="pv-frame video-cover" data-vid="pSUekUq0Iho">
+              <img class="video-thumb" src="https://img.youtube.com/vi/pSUekUq0Iho/hqdefault.jpg" alt="Urbam City gameplay" loading="lazy">
+              <button class="play-btn" onclick="loadVideo(this.closest('.pv-frame'))" aria-label="Play video">
+                <svg class="play-icon" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
             </div>
           </div>
           <div class="pc-tools">

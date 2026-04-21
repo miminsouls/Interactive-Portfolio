@@ -177,17 +177,86 @@ if (tagline) {
 
 console.log('🌸 Portfolio of María Zuluaga Soto — loaded');
 
-// ── Video tab switcher (scoped per card) ──
+// ── Video tab switcher (handles both cover-state and live-iframe-state) ──
 function switchVideo(frameId, videoId, btn) {
-    const frame = document.getElementById(frameId);
+    var frame = document.getElementById(frameId);
     if (!frame) return;
-    const container = frame.closest('.pc-videos');
+    var container = frame.closest('.pc-videos');
     if (!container) return;
-    container.querySelectorAll('.pv-tab').forEach(function(t) {
-        t.classList.remove('active');
-    });
-    // btn may be the button or a child element — walk up to the button
-    const tab = btn.classList.contains('pv-tab') ? btn : btn.closest('.pv-tab');
+    container.querySelectorAll('.pv-tab').forEach(function(t) { t.classList.remove('active'); });
+    var tab = btn.classList.contains('pv-tab') ? btn : btn.closest('.pv-tab');
     if (tab) tab.classList.add('active');
-    frame.src = 'https://www.youtube.com/embed/' + videoId;
+    if (frame.classList.contains('video-cover')) {
+        // Not playing yet — swap thumbnail and store pending video
+        frame.dataset.vid = videoId;
+        var thumb = frame.querySelector('.video-thumb');
+        if (thumb) thumb.src = 'https://img.youtube.com/vi/' + videoId + '/hqdefault.jpg';
+    } else {
+        // Iframe already loaded — just change src
+        var iframe = frame.querySelector('iframe');
+        if (iframe) iframe.src = 'https://www.youtube.com/embed/' + videoId;
+    }
 }
+
+// ── Click-to-play: replace cover with autoplay iframe ──
+function loadVideo(frame) {
+    var vid = frame.dataset.vid;
+    frame.classList.remove('video-cover');
+    frame.innerHTML = '<iframe src="https://www.youtube.com/embed/' + vid +
+        '?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write;' +
+        ' encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+
+// ── Project category filter ──
+document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        var filter = this.dataset.filter;
+        document.querySelectorAll('.project-card').forEach(function(card) {
+            var matches = filter === 'all' || card.dataset.category.includes(filter);
+            if (matches) {
+                card.style.display = '';
+                requestAnimationFrame(function() {
+                    card.style.opacity = '1';
+                    card.style.transform = '';
+                });
+            } else {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(12px)';
+                setTimeout(function() { card.style.display = 'none'; }, 260);
+            }
+        });
+    });
+});
+
+// ── Animated stat counters ──
+function animateCounter(el, target, isDecimal, suffix, duration) {
+    var start = performance.now();
+    function step(now) {
+        var progress = Math.min((now - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        var val = eased * target;
+        el.textContent = isDecimal ? val.toFixed(1) : Math.floor(val) + (progress >= 1 ? suffix : '');
+        if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+}
+var statObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
+        var numEl = entry.target.querySelector('.stat-num');
+        if (!numEl || numEl.dataset.animated) return;
+        numEl.dataset.animated = 'true';
+        var original = numEl.textContent.trim();
+        var numMatch = original.match(/[\d.]+/);
+        if (numMatch) {
+            var isDecimal = original.includes('.');
+            var target = parseFloat(numMatch[0]);
+            var suffix = original.replace(/[\d.]+/, '');
+            numEl.textContent = isDecimal ? '0.0' : '0';
+            animateCounter(numEl, target, isDecimal, suffix, 1100);
+        }
+    });
+}, { threshold: 0.6 });
+document.querySelectorAll('.stat-card').forEach(function(c) { statObserver.observe(c); });

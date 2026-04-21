@@ -662,6 +662,92 @@ img { display: block; max-width: 100%; }
 }
 .cv-link { min-width: 0; flex: 1; max-width: 220px; }
 
+/* ── Open-to-internships badge ── */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(232,116,154,0.08);
+  border: 1px solid rgba(232,116,154,0.22);
+  border-radius: 99px;
+  padding: 5px 14px;
+  font-size: 0.71rem;
+  color: var(--rose-300);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.badge-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--rose-400);
+  flex-shrink: 0;
+  animation: pulse-dot 2.2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%,100% { transform: scale(1);   box-shadow: 0 0 0 0   rgba(232,116,154,0.5); }
+  50%      { transform: scale(0.8); box-shadow: 0 0 0 5px rgba(232,116,154,0);   }
+}
+
+/* ── Project filter ── */
+.proj-filter {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 42px;
+}
+.filter-btn {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  padding: 7px 20px;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  letter-spacing: 0.02em;
+}
+.filter-btn:hover { border-color: var(--rose-400); color: var(--rose-300); }
+.filter-btn.active {
+  background: rgba(232,116,154,0.13);
+  border-color: var(--rose-400);
+  color: var(--rose-300);
+}
+.project-card { transition: opacity 0.25s, transform 0.25s; }
+
+/* ── Click-to-play video cover ── */
+.video-cover { position: relative; cursor: pointer; background: #0d090f; overflow: hidden; }
+.video-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s, transform 0.4s;
+}
+.video-cover:hover .video-thumb { opacity: 0.6; transform: scale(1.04); }
+.play-btn {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px; height: 58px;
+  background: rgba(220,100,142,0.92);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 28px rgba(232,116,154,0.45);
+}
+.video-cover:hover .play-btn {
+  transform: translate(-50%, -50%) scale(1.12);
+  background: var(--rose-400);
+  box-shadow: 0 8px 36px rgba(232,116,154,0.6);
+}
+.play-icon { width: 20px; height: 20px; fill: white; margin-left: 3px; }
+
 /* ── Footer ── */
 .footer {
   padding: 40px 0;
