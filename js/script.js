@@ -230,33 +230,4 @@ document.querySelectorAll('.filter-btn').forEach(function(btn) {
     });
 });
 
-// ── Animated stat counters ──
-function animateCounter(el, target, isDecimal, suffix, duration) {
-    var start = performance.now();
-    function step(now) {
-        var progress = Math.min((now - start) / duration, 1);
-        var eased = 1 - Math.pow(1 - progress, 3);
-        var val = eased * target;
-        el.textContent = isDecimal ? val.toFixed(1) : Math.floor(val) + (progress >= 1 ? suffix : '');
-        if (progress < 1) requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-}
-var statObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-        if (!entry.isIntersecting) return;
-        var numEl = entry.target.querySelector('.stat-num');
-        if (!numEl || numEl.dataset.animated) return;
-        numEl.dataset.animated = 'true';
-        var original = numEl.textContent.trim();
-        var numMatch = original.match(/[\d.]+/);
-        if (numMatch) {
-            var isDecimal = original.includes('.');
-            var target = parseFloat(numMatch[0]);
-            var suffix = original.replace(/[\d.]+/, '');
-            numEl.textContent = isDecimal ? '0.0' : '0';
-            animateCounter(numEl, target, isDecimal, suffix, 1100);
-        }
-    });
-}, { threshold: 0.6 });
-document.querySelectorAll('.stat-card').forEach(function(c) { statObserver.observe(c); });
+
