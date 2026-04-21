@@ -669,6 +669,16 @@ img { display: block; max-width: 100%; }
 }
 .footer-sub { font-size: 0.78rem; color: var(--text-muted); opacity: 0.6; }
 
+/* ── Single video embed (no tabs) ── */
+.pc-video-single {
+  margin: 20px 0;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  background: rgba(0,0,0,0.2);
+}
+.pc-video-full { grid-column: 1 / -1; }
+
 /* ── Lucide Icons ── */
 [data-lucide] { display: inline-block; vertical-align: middle; }
 .icon { stroke-width: 1.8; }

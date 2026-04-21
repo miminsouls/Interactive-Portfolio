@@ -160,6 +160,13 @@
             <li>Game menu UI &amp; tutorial flow</li>
             <li>WebGL compilation &amp; publishing</li>
           </ul>
+          <div class="pc-video-single pc-video-full">
+            <div class="pv-frame">
+              <iframe src="https://www.youtube.com/embed/9-3vLH-whzM" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
           <div class="pc-tools">
             <span>Unity</span><span>C#</span><span>WebGL</span><span>Level Design</span>
           </div>
@@ -182,6 +189,13 @@
             <li>User interactions with virtual space</li>
             <li>Environment optimization for immersion</li>
           </ul>
+          <div class="pc-video-single">
+            <div class="pv-frame">
+              <iframe src="https://www.youtube.com/embed/_vGLZhVnZwY" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
           <div class="pc-tools">
             <span>Unity</span><span>VR</span><span>Meta Quest 3</span><span>UX</span>
           </div>
@@ -207,9 +221,9 @@
           <!-- Inkomprendido Videos -->
           <div class="pc-videos">
             <div class="pv-tabs">
-              <button class="pv-tab active" onclick="switchInkVideo(this, '-pASCB_ayKg')"><i data-lucide="film" class="icon icon-tag"></i> Teaser Narrativo</button>
-              <button class="pv-tab" onclick="switchInkVideo(this, 'HdBjTqZl0D4')"><i data-lucide="sparkles" class="icon icon-tag"></i> Final &ldquo;Bueno&rdquo;</button>
-              <button class="pv-tab" onclick="switchInkVideo(this, 'Cm8Nvwfi9o0')"><i data-lucide="zap" class="icon icon-tag"></i> Final &ldquo;Malo&rdquo;</button>
+              <button class="pv-tab active" onclick="switchVideo('inkFrame', '-pASCB_ayKg', this)"><i data-lucide="film" class="icon icon-tag"></i> Narrative Teaser</button>
+              <button class="pv-tab" onclick="switchVideo('inkFrame', 'HdBjTqZl0D4', this)"><i data-lucide="sparkles" class="icon icon-tag"></i> Good Ending</button>
+              <button class="pv-tab" onclick="switchVideo('inkFrame', 'Cm8Nvwfi9o0', this)"><i data-lucide="zap" class="icon icon-tag"></i> Bad Ending</button>
             </div>
             <div class="pv-frame">
               <iframe id="inkFrame" src="https://www.youtube.com/embed/-pASCB_ayKg" frameborder="0"
@@ -239,6 +253,17 @@
             <li>UI design for the VR experience</li>
             <li>Voice-over recording &amp; implementation</li>
           </ul>
+          <div class="pc-videos">
+            <div class="pv-tabs">
+              <button class="pv-tab active" onclick="switchVideo('bienFrame', 'mP1ri7IirlQ', this)"><i data-lucide="play" class="icon icon-tag"></i> Trailer</button>
+              <button class="pv-tab" onclick="switchVideo('bienFrame', 'qT3kpYy1leA', this)"><i data-lucide="monitor-play" class="icon icon-tag"></i> Full Experience</button>
+            </div>
+            <div class="pv-frame">
+              <iframe id="bienFrame" src="https://www.youtube.com/embed/mP1ri7IirlQ" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
           <div class="pc-tools">
             <span>Unity VR</span><span>Figma</span><span>UX Research</span><span>Voice-over</span>
           </div>
@@ -261,6 +286,13 @@
             <li>Advanced Graph Editor &amp; parenting</li>
             <li>Full render pipeline in Maya</li>
           </ul>
+          <div class="pc-video-single">
+            <div class="pv-frame">
+              <iframe src="https://www.youtube.com/embed/fVzH7qpyKcM" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
           <div class="pc-tools">
             <span>Maya</span><span>Graph Editor</span><span>Rendering</span><span>Rigging</span>
           </div>
@@ -446,7 +478,13 @@
           </a>
           <a href="https://www.linkedin.com/in/maria-zuluaga-soto-1812543aa" target="_blank" rel="noopener"
             class="contact-link" id="linkedinLink">
-            <span class="cl-icon"><i data-lucide="linkedin" class="icon icon-skill"></i></span>
+            <span class="cl-icon">
+              <svg class="icon icon-skill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </span>
             <span class="cl-text">LinkedIn</span>
           </a>
           <a href="tel:+573007778674" class="contact-link" id="phoneLink">

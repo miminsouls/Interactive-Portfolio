@@ -177,10 +177,11 @@ if (tagline) {
 
 console.log('🌸 Portfolio of María Zuluaga Soto — loaded');
 
-// ── Inkomprendido video tab switcher ──
-function switchInkVideo(btn, videoId) {
-    document.querySelectorAll('.pv-tab').forEach(t => t.classList.remove('active'));
+// ── Video tab switcher (generic, scoped per card) ──
+function switchVideo(frameId, videoId, btn) {
+    const container = btn.closest('.pc-videos');
+    container.querySelectorAll('.pv-tab').forEach(t => t.classList.remove('active'));
     btn.classList.add('active');
-    const frame = document.getElementById('inkFrame');
+    const frame = document.getElementById(frameId);
     if (frame) frame.src = `https://www.youtube.com/embed/${videoId}`;
 }
