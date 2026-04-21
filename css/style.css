@@ -322,15 +322,15 @@ img { display: block; max-width: 100%; }
 .hc-langs {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
   margin-top: 4px;
 }
 .hc-lang-item {
-  font-size: 0.74rem;
+  font-size: 0.73rem;
   color: var(--text-muted);
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
   justify-content: center;
 }
 
@@ -670,10 +670,11 @@ img { display: block; max-width: 100%; }
 .footer-sub { font-size: 0.78rem; color: var(--text-muted); opacity: 0.6; }
 
 /* ── Lucide Icons ── */
-[data-lucide] { display: inline-block; vertical-align: -0.13em; }
+[data-lucide] { display: inline-block; vertical-align: middle; }
 .icon { stroke-width: 1.8; }
 .icon-nav     { width: 0.9rem;  height: 0.9rem;  color: var(--rose-300); }
-.icon-tag     { width: 0.78rem; height: 0.78rem; color: var(--rose-400); vertical-align: -0.1em; }
+.icon-tag     { width: 0.72rem; height: 0.72rem; color: var(--rose-400); margin-bottom: 2px; }
+.icon-tiny    { width: 0.62rem; height: 0.62rem; color: var(--rose-400); }
 .icon-skill   { width: 1.2rem;  height: 1.2rem;  color: var(--rose-400); }
 .icon-project { width: 2.4rem;  height: 2.4rem;  color: var(--rose-400); }
 
