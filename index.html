@@ -43,12 +43,13 @@
   <nav class="nav" id="nav">
     <div class="nav-logo">MZS <i data-lucide="sparkles" class="icon icon-nav"></i></div>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#animations">Films</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact" class="nav-cta">Say Hello</a></li>
+      <li><a href="#about" data-i18n="nav-about">About</a></li>
+      <li><a href="#projects" data-i18n="nav-projects">Projects</a></li>
+      <li><a href="#animations" data-i18n="nav-films">Films</a></li>
+      <li><a href="#skills" data-i18n="nav-skills">Skills</a></li>
+      <li><a href="#contact" class="nav-cta" data-i18n="nav-cta">Say Hello</a></li>
     </ul>
+    <button id="langToggle" class="lang-toggle">ES</button>
     <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
@@ -58,14 +59,14 @@
   <section class="hero" id="home">
     <div class="hero-content">
       <div class="hero-badge reveal">
-        <span class="badge-dot"></span> Open to internships &middot; 2nd Sem 2026
+        <span class="badge-dot"></span> <span data-i18n="hero-badge">Open to internships &middot; 2nd Sem 2026</span>
       </div>
-      <p class="hero-eyebrow reveal">Interactive Designer · 3D Animator · Game Developer · QA-minded</p>
+      <p class="hero-eyebrow reveal" data-i18n="hero-eyebrow">Interactive Designer · 3D Animator · Game Developer · QA-minded</p>
       <h1 class="hero-name reveal">
         <span class="name-first">María</span>
         <span class="name-last">Zuluaga Soto</span>
       </h1>
-      <p class="hero-tagline reveal">
+      <p class="hero-tagline reveal" data-i18n-html="hero-tagline">
         I make games — from concept to player,<br />
         I make sure <em>nothing breaks.</em>
       </p>
@@ -73,12 +74,12 @@
         <span class="tag"><i data-lucide="gamepad-2" class="icon icon-tag"></i> Unity · C#</span>
         <span class="tag"><i data-lucide="glasses" class="icon icon-tag"></i> VR / Meta Quest</span>
         <span class="tag"><i data-lucide="globe" class="icon icon-tag"></i> WebGL Builds</span>
-        <span class="tag"><i data-lucide="search" class="icon icon-tag"></i> UX Research</span>
-        <span class="tag"><i data-lucide="shield-check" class="icon icon-tag"></i> QA Testing</span>
+        <span class="tag"><i data-lucide="search" class="icon icon-tag"></i> <span data-i18n="tag-ux">UX Research</span></span>
+        <span class="tag"><i data-lucide="shield-check" class="icon icon-tag"></i> <span data-i18n="tag-qa">QA Testing</span></span>
       </div>
       <div class="hero-actions reveal">
-        <a href="#projects" class="btn btn-primary">See my work</a>
-        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        <a href="#projects" class="btn btn-primary" data-i18n="hero-see">See my work</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero-touch">Get in touch</a>
       </div>
     </div>
     <div class="hero-visual">
@@ -100,8 +101,8 @@
             <span>VR</span>
           </div>
           <div class="hc-langs">
-            <p class="hc-lang-item"><i data-lucide="globe" class="icon icon-tiny"></i> English · C1</p>
-            <p class="hc-lang-item"><i data-lucide="message-circle" class="icon icon-tiny"></i> Spanish · Native</p>
+            <p class="hc-lang-item"><i data-lucide="globe" class="icon icon-tiny"></i> <span data-i18n="hc-lang-en">English · C1</span></p>
+            <p class="hc-lang-item"><i data-lucide="message-circle" class="icon icon-tiny"></i> <span data-i18n="hc-lang-es">Spanish · Native</span></p>
           </div>
         </div>
       </div>
@@ -111,46 +112,46 @@
   <!-- ─── ABOUT ─── -->
   <section class="about section" id="about">
     <div class="container">
-      <div class="section-label reveal">⋆ About me</div>
+      <div class="section-label reveal" data-i18n="about-label">⋆ About me</div>
       <div class="about-grid">
         <div class="about-text">
-          <h2 class="section-title reveal">Still learning.<br /><em>Always paying attention.</em></h2>
-          <p class="body-text reveal">
+          <h2 class="section-title reveal" data-i18n-html="about-h2">Still learning.<br /><em>Always paying attention.</em></h2>
+          <p class="body-text reveal" data-i18n="about-p1">
             I'm an Interactive Design student at EAFIT focused on building games and interactive
             experiences in Unity — across WebGL, mobile, and VR (Meta Quest).
           </p>
-          <p class="body-text reveal">
+          <p class="body-text reveal" data-i18n="about-p2">
             I work on level design, interaction systems, and full implementation, paying close
             attention to how things behave, feel, and perform before they reach the player.
           </p>
-          <p class="body-text reveal">
+          <p class="body-text reveal" data-i18n="about-p3">
             I combine technical development (Unity, C#) with UX research (qualitative and
             quantitative methods), and I also work in 3D animation and audiovisual production.
           </p>
-          <p class="body-text reveal">
+          <p class="body-text reveal" data-i18n="about-p4">
             I'm especially interested in game development, QA, and interactive design roles
             where I can build, test, and refine real player experiences.
           </p>
-          <p class="body-quote reveal">
+          <p class="body-quote reveal" data-i18n="about-quote">
             "Curiosity is the best debugging tool."
           </p>
         </div>
         <div class="about-stats reveal">
           <div class="stat-card">
             <span class="stat-num">7+</span>
-            <span class="stat-label">Projects delivered</span>
+            <span class="stat-label" data-i18n="stat-projects">Projects delivered</span>
           </div>
           <div class="stat-card">
             <span class="stat-num">4.3</span>
-            <span class="stat-label">GPA / 5.0</span>
+            <span class="stat-label" data-i18n="stat-gpa">GPA / 5.0</span>
           </div>
           <div class="stat-card">
             <span class="stat-num">C1</span>
-            <span class="stat-label">English level</span>
+            <span class="stat-label" data-i18n="stat-english">English level</span>
           </div>
           <div class="stat-card">
             <span class="stat-num">4th</span>
-            <span class="stat-label">Year at EAFIT</span>
+            <span class="stat-label" data-i18n="stat-year">Year at EAFIT</span>
           </div>
         </div>
       </div>
@@ -160,16 +161,16 @@
   <!-- ─── PROJECTS ─── -->
   <section class="projects section" id="projects">
     <div class="container">
-      <div class="section-label reveal">⋆ Selected work</div>
-      <h2 class="section-title reveal">Projects</h2>
-      <p class="section-sub reveal">Games, VR, 3D animation, audiovisual production, and interactive apps — built with
+      <div class="section-label reveal" data-i18n="proj-label">⋆ Selected work</div>
+      <h2 class="section-title reveal" data-i18n="proj-title">Projects</h2>
+      <p class="section-sub reveal" data-i18n="proj-sub">Games, VR, 3D animation, audiovisual production, and interactive apps — built with
         intention.</p>
 
       <div class="proj-filter reveal">
-        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn active" data-filter="all" data-i18n="filter-all">All</button>
         <button class="filter-btn" data-filter="Game Dev">Game Dev</button>
         <button class="filter-btn" data-filter="VR">VR</button>
-        <button class="filter-btn" data-filter="Animation">Animation</button>
+        <button class="filter-btn" data-filter="Animation" data-i18n="filter-animation">Animation</button>
       </div>
 
       <div class="projects-grid">
@@ -177,19 +178,19 @@
         <!-- 1 Labyrinth Escape -->
         <article class="project-card card-featured reveal" data-category="Game Dev">
           <div class="pc-glow"></div>
-          <div class="pc-badge">2026 · Featured</div>
+          <div class="pc-badge" data-i18n="lab-badge">2026 · Featured</div>
           <div class="pc-emoji"><i data-lucide="navigation" class="icon icon-project"></i></div>
           <h3 class="pc-title">Labyrinth Escape</h3>
-          <p class="pc-type">3D Unity Game · WebGL</p>
-          <p class="pc-desc">
+          <p class="pc-type" data-i18n="lab-type">3D Unity Game · WebGL</p>
+          <p class="pc-desc" data-i18n="lab-desc">
             A 3D labyrinth game built end-to-end in Unity. I owned level design,
             player interactions, the tutorial system, and delivered the full WebGL build.
           </p>
           <ul class="pc-bullets">
-            <li>Level design &amp; environment layout</li>
-            <li>Player interaction systems with objects &amp; obstacles</li>
-            <li>Game menu UI &amp; tutorial flow</li>
-            <li>WebGL compilation &amp; publishing</li>
+            <li data-i18n="lab-b1">Level design &amp; environment layout</li>
+            <li data-i18n="lab-b2">Player interaction systems with objects &amp; obstacles</li>
+            <li data-i18n="lab-b3">Game menu UI &amp; tutorial flow</li>
+            <li data-i18n="lab-b4">WebGL compilation &amp; publishing</li>
           </ul>
           <div class="pc-video-single pc-video-full">
             <div class="pv-frame video-cover" data-vid="9-3vLH-whzM">
@@ -202,7 +203,7 @@
           <div class="pc-tools">
             <span>Unity</span><span>C#</span><span>WebGL</span><span>Level Design</span>
           </div>
-          <div class="pc-role">Role: Level Designer · Developer</div>
+          <div class="pc-role" data-i18n="lab-role">Role: Level Designer · Developer</div>
         </article>
 
         <!-- 2 Monte Sereno Beyond -->
@@ -211,15 +212,15 @@
           <div class="pc-badge">2025</div>
           <div class="pc-emoji"><i data-lucide="glasses" class="icon icon-project"></i></div>
           <h3 class="pc-title">Monte Sereno Beyond</h3>
-          <p class="pc-type">VR Experience · Meta Quest 3</p>
-          <p class="pc-desc">
+          <p class="pc-type" data-i18n="ms-type">VR Experience · Meta Quest 3</p>
+          <p class="pc-desc" data-i18n="ms-desc">
             An immersive virtual reality experience built in Unity for Meta Quest 3.
             I designed and implemented an interactive zone of the virtual environment.
           </p>
           <ul class="pc-bullets">
-            <li>Interactive zone design &amp; implementation</li>
-            <li>User interactions with virtual space</li>
-            <li>Environment optimization for immersion</li>
+            <li data-i18n="ms-b1">Interactive zone design &amp; implementation</li>
+            <li data-i18n="ms-b2">User interactions with virtual space</li>
+            <li data-i18n="ms-b3">Environment optimization for immersion</li>
           </ul>
           <div class="pc-video-single">
             <div class="pv-frame video-cover" data-vid="_vGLZhVnZwY">
@@ -232,34 +233,31 @@
           <div class="pc-tools">
             <span>Unity</span><span>VR</span><span>Meta Quest 3</span><span>UX</span>
           </div>
-          <div class="pc-role">Role: VR Designer · Developer</div>
+          <div class="pc-role" data-i18n="ms-role">Role: VR Designer · Developer</div>
         </article>
 
         <!-- 3 Inkomprendido -->
         <article class="project-card reveal" data-category="Animation">
           <div class="pc-glow"></div>
-          <div class="pc-badge">2025 · IndieLevel</div>
+          <div class="pc-badge" data-i18n="ink-badge">2025 · IndieLevel</div>
           <div class="pc-emoji"><i data-lucide="layers" class="icon icon-project"></i></div>
           <h3 class="pc-title">Inkomprendido</h3>
-          <p class="pc-type">3D Card-Combat Game · Studio Collaboration</p>
-          <p class="pc-desc">
+          <p class="pc-type" data-i18n="ink-type">3D Card-Combat Game · Studio Collaboration</p>
+          <p class="pc-desc" data-i18n="ink-desc">
             A 3D turn-based card combat game developed in collaboration with IndieLevel.
             I led character animation and produced the game's main cinematic.
           </p>
           <ul class="pc-bullets">
-            <li>Character animations: attack, heal, damage, idle</li>
-            <li>Main cinematic production from narrative script</li>
-            <li>Animation implementation &amp; rendering in Maya</li>
+            <li data-i18n="ink-b1">Character animations: attack, heal, damage, idle</li>
+            <li data-i18n="ink-b2">Main cinematic production from narrative script</li>
+            <li data-i18n="ink-b3">Animation implementation &amp; rendering in Maya</li>
           </ul>
           <!-- Inkomprendido Videos -->
           <div class="pc-videos">
             <div class="pv-tabs">
-              <button class="pv-tab active" onclick="switchVideo('inkFrame', '-pASCB_ayKg', this)"><i data-lucide="film"
-                  class="icon icon-tag"></i> Narrative Teaser</button>
-              <button class="pv-tab" onclick="switchVideo('inkFrame', 'HdBjTqZl0D4', this)"><i data-lucide="sparkles"
-                  class="icon icon-tag"></i> Good Ending</button>
-              <button class="pv-tab" onclick="switchVideo('inkFrame', 'Cm8Nvwfi9o0', this)"><i data-lucide="zap"
-                  class="icon icon-tag"></i> Bad Ending</button>
+              <button class="pv-tab active" onclick="switchVideo('inkFrame', '-pASCB_ayKg', this)"><i data-lucide="film" class="icon icon-tag"></i> <span data-i18n="ink-tab1">Narrative Teaser</span></button>
+              <button class="pv-tab" onclick="switchVideo('inkFrame', 'HdBjTqZl0D4', this)"><i data-lucide="sparkles" class="icon icon-tag"></i> <span data-i18n="ink-tab2">Good Ending</span></button>
+              <button class="pv-tab" onclick="switchVideo('inkFrame', 'Cm8Nvwfi9o0', this)"><i data-lucide="zap" class="icon icon-tag"></i> <span data-i18n="ink-tab3">Bad Ending</span></button>
             </div>
             <div class="pv-frame video-cover" id="inkFrame" data-vid="-pASCB_ayKg">
               <img class="video-thumb" src="https://img.youtube.com/vi/-pASCB_ayKg/hqdefault.jpg" alt="Inkomprendido video" loading="lazy">
@@ -271,31 +269,29 @@
           <div class="pc-tools">
             <span>Maya</span><span>Unity</span><span>Animation</span><span>Cinematics</span>
           </div>
-          <div class="pc-role">Role: Character Animator · Cinematic Director</div>
+          <div class="pc-role" data-i18n="ink-role">Role: Character Animator · Cinematic Director</div>
         </article>
 
         <!-- 4 Bien-Start -->
         <article class="project-card reveal" data-category="VR · UX">
           <div class="pc-glow"></div>
-          <div class="pc-badge">2025 · FunFactor</div>
+          <div class="pc-badge" data-i18n="bs-badge">2025 · FunFactor</div>
           <div class="pc-emoji"><i data-lucide="leaf" class="icon icon-project"></i></div>
           <h3 class="pc-title">Bien-Start</h3>
-          <p class="pc-type">VR Gamification · Workplace Wellness</p>
-          <p class="pc-desc">
+          <p class="pc-type" data-i18n="bs-type">VR Gamification · Workplace Wellness</p>
+          <p class="pc-desc" data-i18n="bs-desc">
             A VR gamification concept developed with FunFactor to improve workplace active breaks,
             combining UX research, UI design, and voice-over integration.
           </p>
           <ul class="pc-bullets">
-            <li>Qualitative &amp; quantitative UX research</li>
-            <li>UI design for the VR experience</li>
-            <li>Voice-over recording &amp; implementation</li>
+            <li data-i18n="bs-b1">Qualitative &amp; quantitative UX research</li>
+            <li data-i18n="bs-b2">UI design for the VR experience</li>
+            <li data-i18n="bs-b3">Voice-over recording &amp; implementation</li>
           </ul>
           <div class="pc-videos">
             <div class="pv-tabs">
-              <button class="pv-tab active" onclick="switchVideo('bienFrame', 'mP1ri7IirlQ', this)"><i
-                  data-lucide="play" class="icon icon-tag"></i> Trailer</button>
-              <button class="pv-tab" onclick="switchVideo('bienFrame', 'qT3kpYy1leA', this)"><i
-                  data-lucide="monitor-play" class="icon icon-tag"></i> Full Experience</button>
+              <button class="pv-tab active" onclick="switchVideo('bienFrame', 'mP1ri7IirlQ', this)"><i data-lucide="play" class="icon icon-tag"></i> <span data-i18n="bs-tab1">Trailer</span></button>
+              <button class="pv-tab" onclick="switchVideo('bienFrame', 'qT3kpYy1leA', this)"><i data-lucide="monitor-play" class="icon icon-tag"></i> <span data-i18n="bs-tab2">Full Experience</span></button>
             </div>
             <div class="pv-frame video-cover" id="bienFrame" data-vid="mP1ri7IirlQ">
               <img class="video-thumb" src="https://img.youtube.com/vi/mP1ri7IirlQ/hqdefault.jpg" alt="Bien-Start video" loading="lazy">
@@ -307,7 +303,7 @@
           <div class="pc-tools">
             <span>Unity VR</span><span>Figma</span><span>UX Research</span><span>Voice-over</span>
           </div>
-          <div class="pc-role">Role: UX Researcher · UI Designer</div>
+          <div class="pc-role" data-i18n="bs-role">Role: UX Researcher · UI Designer</div>
         </article>
 
         <!-- 5 Maleficum -->
@@ -316,15 +312,15 @@
           <div class="pc-badge">2024</div>
           <div class="pc-emoji"><i data-lucide="moon" class="icon icon-project"></i></div>
           <h3 class="pc-title">Maleficum</h3>
-          <p class="pc-type">3D Narrative Animation</p>
-          <p class="pc-desc">
+          <p class="pc-type" data-i18n="mal-type">3D Narrative Animation</p>
+          <p class="pc-desc" data-i18n="mal-desc">
             A 3D animated short with advanced Maya techniques. I produced the final 12 seconds
             of the piece, pushing animation craft with complex rigging and render workflows.
           </p>
           <ul class="pc-bullets">
-            <li>Final 12s of animation sequence</li>
-            <li>Advanced Graph Editor &amp; parenting</li>
-            <li>Full render pipeline in Maya</li>
+            <li data-i18n="mal-b1">Final 12s of animation sequence</li>
+            <li data-i18n="mal-b2">Advanced Graph Editor &amp; parenting</li>
+            <li data-i18n="mal-b3">Full render pipeline in Maya</li>
           </ul>
           <div class="pc-video-single">
             <div class="pv-frame video-cover" data-vid="fVzH7qpyKcM">
@@ -337,7 +333,7 @@
           <div class="pc-tools">
             <span>Maya</span><span>Graph Editor</span><span>Rendering</span><span>Rigging</span>
           </div>
-          <div class="pc-role">Role: 3D Animator</div>
+          <div class="pc-role" data-i18n="mal-role">Role: 3D Animator</div>
         </article>
 
         <!-- 6 Urbam City -->
@@ -346,15 +342,15 @@
           <div class="pc-badge">2023</div>
           <div class="pc-emoji"><i data-lucide="building-2" class="icon icon-project"></i></div>
           <h3 class="pc-title">Urbam City</h3>
-          <p class="pc-type">Interactive Educational App · Unity Mobile</p>
-          <p class="pc-desc">
+          <p class="pc-type" data-i18n="uc-type">Interactive Educational App · Unity Mobile</p>
+          <p class="pc-desc" data-i18n="uc-desc">
             An educational interactive application for mobile devices. I built
             the touch interaction system and programmed player movement and object interactions.
           </p>
           <ul class="pc-bullets">
-            <li>Touch interaction system for mobile</li>
-            <li>Player movement programming</li>
-            <li>Object interaction logic</li>
+            <li data-i18n="uc-b1">Touch interaction system for mobile</li>
+            <li data-i18n="uc-b2">Player movement programming</li>
+            <li data-i18n="uc-b3">Object interaction logic</li>
           </ul>
           <div class="pc-video-single">
             <div class="pv-frame video-cover" data-vid="pSUekUq0Iho">
@@ -367,7 +363,7 @@
           <div class="pc-tools">
             <span>Unity</span><span>C#</span><span>Mobile</span><span>Touch UI</span>
           </div>
-          <div class="pc-role">Role: Unity Developer · Interaction Designer</div>
+          <div class="pc-role" data-i18n="uc-role">Role: Unity Developer · Interaction Designer</div>
         </article>
 
       </div>
@@ -377,9 +373,9 @@
   <!-- ─── ANIMATIONS / CORTOS ─── -->
   <section class="animations section" id="animations">
     <div class="container">
-      <div class="section-label reveal">⋆ Audiovisual work</div>
-      <h2 class="section-title reveal">Short <em>Films</em></h2>
-      <p class="section-sub reveal">Collaborative short films where I worked in the art team —
+      <div class="section-label reveal" data-i18n="films-label">⋆ Audiovisual work</div>
+      <h2 class="section-title reveal" data-i18n-html="films-title">Short <em>Films</em></h2>
+      <p class="section-sub reveal" data-i18n="films-sub">Collaborative short films where I worked in the art team —
         set design, wardrobe, art direction, lighting, makeup, props, and video editing.</p>
 
       <div class="cortos-grid">
@@ -393,7 +389,7 @@
           </div>
           <div class="corto-info">
             <span class="corto-title">UNA VELA</span>
-            <span class="corto-label">Short Film · Set Design · Wardrobe · Video Editing</span>
+            <span class="corto-label" data-i18n="vela-label">Short Film · Set Design · Wardrobe · Video Editing</span>
           </div>
         </div>
 
@@ -406,7 +402,7 @@
           </div>
           <div class="corto-info">
             <span class="corto-title">SINESTESIA</span>
-            <span class="corto-label">Short Film · Art Direction · Makeup · Wardrobe · Lighting</span>
+            <span class="corto-label" data-i18n="sin-label">Short Film · Art Direction · Makeup · Wardrobe · Lighting</span>
           </div>
         </div>
 
@@ -419,7 +415,7 @@
           </div>
           <div class="corto-info">
             <span class="corto-title">LEONA</span>
-            <span class="corto-label">Short Film · Wardrobe Design · Props · Set Design · Lighting</span>
+            <span class="corto-label" data-i18n="leona-label">Short Film · Wardrobe Design · Props · Set Design · Lighting</span>
           </div>
         </div>
 
@@ -430,14 +426,14 @@
   <!-- ─── SKILLS ─── -->
   <section class="skills section" id="skills">
     <div class="container">
-      <div class="section-label reveal">⋆ Toolkit</div>
-      <h2 class="section-title reveal">Skills &amp; Tools</h2>
+      <div class="section-label reveal" data-i18n="skills-label">⋆ Toolkit</div>
+      <h2 class="section-title reveal" data-i18n="skills-title">Skills &amp; Tools</h2>
 
       <div class="skills-grid">
 
         <div class="skill-group reveal">
           <div class="sg-icon"><i data-lucide="gamepad-2" class="icon icon-skill"></i></div>
-          <h3 class="sg-title">Game Development</h3>
+          <h3 class="sg-title" data-i18n="sg-gamedev">Game Development</h3>
           <div class="sg-tags">
             <span>Unity 2D</span>
             <span>Unity 3D</span>
@@ -453,7 +449,7 @@
 
         <div class="skill-group reveal">
           <div class="sg-icon"><i data-lucide="clapperboard" class="icon icon-skill"></i></div>
-          <h3 class="sg-title">3D &amp; Animation</h3>
+          <h3 class="sg-title" data-i18n="sg-3d">3D &amp; Animation</h3>
           <div class="sg-tags">
             <span>Autodesk Maya</span>
             <span>Character Animation</span>
@@ -467,7 +463,7 @@
 
         <div class="skill-group reveal">
           <div class="sg-icon"><i data-lucide="palette" class="icon icon-skill"></i></div>
-          <h3 class="sg-title">Design &amp; UX</h3>
+          <h3 class="sg-title" data-i18n="sg-design">Design &amp; UX</h3>
           <div class="sg-tags">
             <span>Figma</span>
             <span>UI Design</span>
@@ -481,7 +477,7 @@
 
         <div class="skill-group reveal">
           <div class="sg-icon"><i data-lucide="music" class="icon icon-skill"></i></div>
-          <h3 class="sg-title">Audio &amp; Production</h3>
+          <h3 class="sg-title" data-i18n="sg-audio">Audio &amp; Production</h3>
           <div class="sg-tags">
             <span>Reaper</span>
             <span>Audacity</span>
@@ -518,9 +514,9 @@
     <div class="container">
       <div class="contact-inner reveal">
         <div class="contact-orb"></div>
-        <p class="section-label">⋆ Let's connect</p>
-        <h2 class="section-title">Open to internships<br />in <em>games &amp; QA.</em></h2>
-        <p class="body-text">
+        <p class="section-label" data-i18n="contact-label">⋆ Let's connect</p>
+        <h2 class="section-title" data-i18n-html="contact-h2">Open to internships<br />in <em>games &amp; QA.</em></h2>
+        <p class="body-text" data-i18n="contact-p">
           I'm actively seeking internship opportunities in the games industry —
           especially in quality assurance, interactive design, or game development.
           I'm curious, detail-oriented, and ready to learn from any team.
@@ -558,7 +554,7 @@
           </div>
         </div>
         <a href="mailto:mzuluagas@eafit.edu.co" class="btn btn-primary btn-large" id="hiringBtn"><i data-lucide="send"
-            class="icon icon-tag"></i> Say hello</a>
+            class="icon icon-tag"></i> <span data-i18n="contact-cta">Say hello</span></a>
       </div>
     </div>
   </section>
@@ -566,10 +562,10 @@
   <!-- ─── FOOTER ─── -->
   <footer class="footer">
     <div class="container">
-      <p class="footer-text">
+      <p class="footer-text" data-i18n="footer-text">
         Designed &amp; built by María Zuluaga Soto · 2026
       </p>
-      <p class="footer-sub">Universidad EAFIT · Medellín, Colombia</p>
+      <p class="footer-sub" data-i18n="footer-sub">Universidad EAFIT · Medellín, Colombia</p>
     </div>
   </footer>
 
