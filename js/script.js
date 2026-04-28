@@ -329,7 +329,7 @@ var translations = {
     'bs-role':'Rol: Investigadora UX · Diseñadora UI','bs-tab1':'Tráiler','bs-tab2':'Experiencia Completa',
     'mal-type':'Animación Narrativa 3D',
     'mal-desc':'Un cortometraje animado en 3D con técnicas avanzadas de Maya. Produje los 12 segundos finales, aplicando animación compleja con rigging y flujos de renderizado.',
-    'mal-b1':'Secuencia de animación de los últimos 12s','mal-b2':'Graph Editor avanzado y emparentado','mal-b3':'Pipeline de renderizado completo en Maya',
+    'mal-b1':'Secuencia de animación de los últimos 12s','mal-b2':'Graph Editor avanzado y parenting','mal-b3':'Pipeline de renderizado completo en Maya',
     'mal-role':'Rol: Animadora 3D',
     'uc-type':'App Educativa Interactiva · Unity Mobile',
     'uc-desc':'Una aplicación educativa interactiva para dispositivos móviles. Construí el sistema de interacción táctil y programé el movimiento del jugador y la lógica de objetos.',
